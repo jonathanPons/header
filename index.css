@@ -46,6 +46,7 @@ body {
 .nav-links.active {
   display: block;
   position: absolute;
+  transition: 0.3s ease;
   flex-direction: column;
   top: 100%;
   background-color: var(--color-primary);
@@ -74,4 +75,31 @@ span {
   background-color: var(--color-secondary);
   height: 7px;
   border: 1px solid yellow;
+}
+
+/* burger croix */
+
+.burger.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 5px;
+}
+.burger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.burger.active .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -13px;
+}
+
+@media (min-width: 1024px) {
+  .burger {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
 }
