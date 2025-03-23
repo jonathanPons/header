@@ -19,7 +19,6 @@ body {
   font-family: var(--font-base);
 }
 .Nav-Bar {
-  border: 3px solid purple;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -30,7 +29,6 @@ body {
 
 /* info general header */
 .nav-header {
-  border: 3px solid slateblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +63,7 @@ body {
 .burger {
   display: flex;
   flex-direction: column;
-  border: 2px solid rgb(255, 0, 179);
+
   justify-content: space-between;
   cursor: pointer;
   width: 40px;
@@ -74,7 +72,6 @@ body {
 span {
   background-color: var(--color-secondary);
   height: 7px;
-  border: 1px solid yellow;
 }
 
 /* burger croix */
